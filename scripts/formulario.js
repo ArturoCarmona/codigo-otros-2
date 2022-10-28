@@ -1,18 +1,20 @@
 var formulario = document.querySelector("#form")
 
-formulario.onsubmit = function(e) {
+//Se agrego el nombre form a la funcion
+function form(e) {
 
-  e.prevent();
-  
-  var n = formulario.elements[0]
-  var e = formulario.elements[1]
-  var na = formulario.elements[2]
+  //e.prevent();
+  //Se agregaron ";"
 
-  var nombre = n.value
-  var edad = e.value
+  var n = formulario.elements[0];
+  var e = formulario.elements[1];
+  var na = formulario.elements[2];
 
-  var i = na.selectedIndex
-  var nacionalidad = na.options[i].value
+  var nombre = n.value;
+  var edad = e.value;
+
+  var i = na.selectedIndex;
+  var nacionalidad = na.options[i].value;
   console.log(nombre, edad)
   console.log(nacionalidad)
 
