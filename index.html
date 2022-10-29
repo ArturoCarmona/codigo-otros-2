@@ -13,7 +13,7 @@
   <h2>Por favor, confirmar asistencia:</h2>
 
   <!-- Se agrego onsubmit para mandar a llamr a la funcion-->
-  <form class="formulario" onsubmit="form(e)">
+  <form class="formulario"><!-- onsubmit="form(e)" -->
     <!-- Se creo un label apra nombre-->
     <label for="name">Nombre</label>
     <input type="text" name="name" id="name">
@@ -33,10 +33,11 @@
     </select>
     <br />
     <!-- se agrego el valor de Enviar-->
-    <input type="submit" value="Enviar">
+    <!-- <input type="submit" value="Enviar"> -->
+    <button type ="button" onclick="formula(event)">ENVIAR</button>
   </form>
 
-  <div>
+  <div id="lista-de-invitados">
     <h2>Lista de invitados</h2>
 
   </div>
